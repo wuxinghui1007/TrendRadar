@@ -24,6 +24,9 @@ alibaba
 京东
 刘强东
 
+美团
+王兴
+
 字节
 bytedance
 张一鸣
@@ -35,6 +38,8 @@ grok
 
 微软
 Microsoft
+
+硅谷
 
 英伟达
 NVIDIA
@@ -54,6 +59,7 @@ sora
 ai
 !gai
 人工智能
+agi
 
 自动驾驶
 
