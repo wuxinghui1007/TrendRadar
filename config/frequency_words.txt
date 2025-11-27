@@ -1,6 +1,3 @@
-胖东来
-于东来
-
 DeepSeek
 梁文锋
 
@@ -9,38 +6,20 @@ DeepSeek
 HarmonyOS
 任正非
 
-比亚迪
-王传福
-
-大疆
-DJI
+大语言模型
 
 宇树
 王兴兴
 
-智元
-灵犀
-稚晖君
-彭志辉
+阿里巴巴
+alibaba
+马云
+蔡崇信
+千问
+灵光
 
-黑神话
-冯骥
-
-影之刃零
-梁其伟
-
-哪吒
-饺子
-杨宇
-!车
-!餐
-
-三体
-流浪地球
-刘慈欣
-郭帆
-
-申奥
+百度
+文心一言
 
 京东
 刘强东
@@ -48,9 +27,11 @@ DJI
 字节
 bytedance
 张一鸣
+豆包
 
 特斯拉
 马斯克
+grok
 
 微软
 Microsoft
@@ -69,14 +50,6 @@ deepmind
 chatgpt
 openai
 sora
-
-claude
-Anthropic
-
-iphone
-ipad
-mac
-ios
 
 ai
 !gai
@@ -100,14 +73,6 @@ ai
 
 核能
 
-水电站
-雅鲁藏布江
-
 新质生产力
 
-月球
-登月
-火星
-宇宙
-飞船
-航空
+具身智能
