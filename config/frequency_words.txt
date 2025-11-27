@@ -18,6 +18,10 @@ alibaba
 千问
 灵光
 
+腾讯
+混元
+马化腾
+
 百度
 文心一言
 
@@ -34,7 +38,7 @@ bytedance
 
 特斯拉
 马斯克
-grok
+Grok
 
 微软
 Microsoft
@@ -60,6 +64,10 @@ ai
 !gai
 人工智能
 agi
+!air
+@10
+
+Prompt
 
 自动驾驶
 
@@ -67,6 +75,7 @@ agi
 
 国产
 中国
+@10
 
 美国
 日本
