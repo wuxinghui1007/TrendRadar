@@ -1,18 +1,12 @@
 DeepSeek
 梁文锋
 
-华为
-鸿蒙
-HarmonyOS
-任正非
-
 大语言模型
 
 宇树
-王兴兴
 
 阿里巴巴
-alibaba
+Alibaba
 马云
 蔡崇信
 千问
@@ -29,10 +23,9 @@ alibaba
 刘强东
 
 美团
-王兴
 
 字节
-bytedance
+Bytedance
 张一鸣
 豆包
 
@@ -49,21 +42,19 @@ Microsoft
 NVIDIA
 黄仁勋
 
-AMD
 
 谷歌
-google
-gemini
-deepmind
+Google
+Gemini
 
-chatgpt
-openai
-sora
+Chatgpt
+Openai
+Sora
 
-ai
+AI
 !gai
 人工智能
-agi
+AGI
 !air
 @10
 
@@ -84,10 +75,11 @@ Prompt
 芯片
 光刻机
 
-科技
-
 核能
 
 新质生产力
 
 具身智能
+
+电信诈骗
+反诈
