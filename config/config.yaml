@@ -127,7 +127,5 @@ platforms:
     name: "IT之家"
   - id: "juejin"
     name: "掘金"
-  - id: "nowcoder"
-    name: "牛客网"
   - id: "sspai"
     name: "少数派"
