@@ -76,7 +76,7 @@ report:
   mode: "daily" # 可选: "daily"|"incremental"|"current"
   rank_threshold: 5 # 排名高亮阈值
   sort_by_position_first: false # 排序优先级：true=先按配置位置排序，false=先按热点条数排序
-  max_news_per_keyword: 0 # 每个关键词最大显示数量，0=不限制
+  max_news_per_keyword: 5 # 每个关键词最大显示数量，0=不限制
   reverse_content_order: false # 内容顺序：false=热点词汇统计在前，true=新增热点新闻在前
 
 notification:
@@ -87,7 +87,7 @@ notification:
   bark_batch_size: 4000 # Bark消息分批大小（字节）
   slack_batch_size: 4000 # Slack消息分批大小（字节）
   batch_send_interval: 3 # 批次发送间隔（秒）
-  feishu_message_separator: "━━━━━━━━━━━━━━━━━━━" # feishu 消息分割线
+  feishu_message_separator: " " # feishu 消息分割线
   max_accounts_per_channel: 3 # 每个渠道最大账号数量，建议不超过 3
 
   # 🕐 推送时间窗口控制（可选功能）
@@ -96,12 +96,12 @@ notification:
   #   - 只想在工作日白天接收推送（如 09:00-18:00）
   #   - 希望在晚上固定时间收到汇总（如 20:00-22:00）
   push_window:
-    enabled: false  # 是否启用推送时间窗口控制，默认关闭
+    enabled: true  # 是否启用推送时间窗口控制，默认关闭
     # 注意：GitHub Actions 执行时间不稳定，时间范围建议至少留足 2 小时
     # 如果想要精准的定时推送，建议使用 Docker 部署在个人服务器上
     time_range:
-      start: "20:00"  # 推送时间窗口开始（北京时间）
-      end: "22:00"    # 推送时间窗口结束（北京时间）
+      start: "09:30"  # 推送时间窗口开始（北京时间）
+      end: "10:30"    # 推送时间窗口结束（北京时间）
     once_per_day: true  # 每天在时间窗口内只推送一次，如果 false，则窗口内每次执行都推送
 
   # ⚠️⚠️⚠️ 重要安全警告 / IMPORTANT SECURITY WARNING ⚠️⚠️⚠️
@@ -162,25 +162,80 @@ weight:
 
 # name 可以定义任意名称，只具有显示作用，即使项目运行了几天后，忽然改掉 name 也不会影响代码的正常运行
 platforms:
+  # === 综合新闻媒体类 ===
   - id: "toutiao"
     name: "今日头条"
   - id: "baidu"
     name: "百度热搜"
-  - id: "wallstreetcn-hot"
-    name: "华尔街见闻"
   - id: "thepaper"
     name: "澎湃新闻"
-  - id: "bilibili-hot-search"
-    name: "bilibili 热搜"
-  - id: "cls-hot"
-    name: "财联社热门"
   - id: "ifeng"
     name: "凤凰网"
-  - id: "tieba"
-    name: "贴吧"
+  - id: "cankaoxiaoxi"
+    name: "参考消息"
+  - id: "sputniknewscn"
+    name: "卫星通讯社"
+  - id: "zaobao"
+    name: "联合早报"
+  - id: "mktnews"
+    name: "MKT新闻"
+  - id: "kaopu"
+    name: "靠谱新闻"
+
+  # === 财经投资类 ===
+  - id: "wallstreetcn-hot"
+    name: "华尔街见闻 最热"
+  - id: "wallstreetcn-quick"
+    name: "华尔街见闻 快讯"
+  - id: "wallstreetcn-news"
+    name: "华尔街见闻 最新"
+  - id: "cls-hot"
+    name: "财联社热门"
+  - id: "gelonghui"
+    name: "格隆汇"
+  - id: "xueqiu"
+    name: "雪球"
+  - id: "jin10"
+    name: "金十数据"
+  - id: "fastbull"
+    name: "快讯通"
+
+  # === 社交/短视频/娱乐类 ===
   - id: "weibo"
     name: "微博"
   - id: "douyin"
     name: "抖音"
+  - id: "bilibili-hot-search"
+    name: "bilibili 热搜"
+  - id: "tieba"
+    name: "贴吧"
   - id: "zhihu"
     name: "知乎"
+  - id: "hupu"
+    name: "虎扑"
+
+  # === 科技类平台 ===
+  - id: "ithome"
+    name: "IT之家"
+  - id: "juejin"
+    name: "掘金"
+  - id: "github"
+    name: "GitHub"
+  - id: "hackernews"
+    name: "Hacker News"
+  - id: "solidot"
+    name: "Solidot"
+  - id: "v2ex"
+    name: "V2EX"
+  - id: "nowcoder"
+    name: "牛客网"
+  - id: "pcbeta"
+    name: "远景论坛"
+  - id: "sspai"
+    name: "少数派"
+  - id: "producthunt"
+    name: "ProductHunt"
+
+  # === 其他/工具类 ===
+  - id: "chongbuluo"
+    name: "虫部落"
